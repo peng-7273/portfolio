@@ -1,3 +1,182 @@
 body {
-    background-color: rebeccapurple;
+    font-family: "Afacad Flux", sans-serif;
+    background-color: #181c14;
+    color: #ecdfcc;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+header {
+    background-color: #3c3d37;
+    padding: 1em;
+    text-align: center;
+    max-height: 7em;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+}
+
+.profile-container-header {
+    position: relative;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-header {
+    background: none;
+    border: none;
+    color: #ecdfcc;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 0.7em;
+    padding-top: 0.3em;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.profile-image-header {
+    border-radius: 50%;
+    width: 3.125em;
+    height: 3.125em;
+    margin-left: 0.625em;
+}
+
+h1 {
+    color: #ecdfcc;
+}
+
+h2 {
+    color: #697565;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25em;
+}
+
+.profile-container {
+    background-color: #3c3d37;
+    border: 0.0625em solid #697565;
+    border-radius: 0.625em;
+    padding: 0.9375em;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0.25em 1.25em rgba(0, 0, 0, 0.5);
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 6.25em;
+    height: 6.25em;
+}
+
+.projects {
+    width: 65%;
+}
+
+.code-container {
+    background-color: #697565;
+    border: 0.0625em solid #3c3d37;
+    border-radius: 0.625em;
+    padding: 0.9375em;
+    box-shadow: 0 0.25em 1.25em rgba(0, 0, 0, 0.5);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3c3d37;
+    padding: 0.5em;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.language {
+    color: #ecdfcc;
+    font-weight: bold;
+}
+
+.icon {
+    color: #ecdfcc;
+    font-size: 1.5em;
+}
+
+.project {
+    background-color: #3c3d37;
+    border-radius: 0.3125em;
+    padding: 0.9375em;
+    margin-top: 0.625em;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+    background-color: #697565;
+    box-shadow: 0 0.5em 1.875em rgba(236, 223, 204, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 0.625em;
+    background-color: #3c3d37;
+}
+
+a {
+    color: #ecdfcc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.discord-icon {
+    margin-right: 0.3125em;
+}
+
+.skill {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.skill:hover {
+    color: #ffd700;
+    transform: scale(1.05);
+}
+
+.skills-list {
+    list-style-type: disc;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: left;
+    padding-left: 4.7em;
+}
+
+.skills-list .skill {
+    display: list-item;
+    margin: 0.5em 0;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
 }

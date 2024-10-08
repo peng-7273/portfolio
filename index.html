@@ -1,18 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Octocat.github.io : ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roblox Scripting Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://via.placeholder.com/16" type="image/png" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap");
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    .source-code-pro {
+      font-family: "Source Code Pro", monospace;
+      font-weight: 400;
+    }
 
-    <title>My Portfolio!</title>
-    
-  </head>
+    .afacad-flux {
+      font-family: "Afacad Flux", sans-serif;
+      font-weight: 700;
+    }
 
-  <body>
+    body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  </style>
+</head>
 
-  </body>
+<body>
+  <header>
+    <div class="header-content">
+      <h1 class="afacad-flux">My Roblox Scripting Portfolio</h1>
+      <div class="profile-container-header">
+        <div class="profile-button">
+          My Roblox Profile:
+          <div class="container">
+            <img
+              src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-D4B148A3842358F2D8AEEC101B0783BE-Png/150/150/AvatarHeadshot/Webp/noFilter"
+              alt="Roblox Profile" class="profile-image-header" />
+            <button class="icon-header"
+              onclick="window.open('https://roblox.com/users/119089413/profile', '_blank').focus();">
+              &lt;/&gt;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      Welcome to my portfolio! Here you'll find a showcase of my projects and
+      skills in Roblox scripting, focusing on creating immersive and engaging
+      experiences.
+    </p>
+  </header>
+
+  <main class="main-container">
+    <section class="profile-container">
+      <img src="https://cdn.discordapp.com/avatars/639207543436083200/375b046d33de2dd58476dedd54ace690.webp?size=160"
+        alt="Discord Profile" class="profile-image" />
+      <h2 class="afacad-flux">peng</h2>
+      <p>
+        A passionate Roblox scripter dedicated to crafting immersive
+        experiences. With over 7 years of experience, I excel in both
+        front-end and back-end scripting.
+      </p>
+      <p>My skills include:</p>
+      <ul class="skills-list">
+        <ul class="skills-list">
+          <li class="skill" data-description="Everything front end to back end.">
+            Lua
+          </li>
+          <li class="skill" data-description="Automating & neural networks.">
+            Python
+          </li>
+          <li class="skill" data-description="Responsive websites and web apps.">
+            JavaScript
+          </li>
+          <li class="skill" data-description="User interfaces and styling.">
+            HTML & CSS
+          </li>
+          <li class="skill" data-description="Game development and scripting.">
+            C#
+          </li>
+          <li class="skill" data-description="Managing & querying databases.">
+            SQL
+          </li>
+        </ul>
+      </ul>
+      <a href="javascript:void(0);" onclick="copyToClipboard('peng7273')">
+        <span class="discord-icon">🔗</span> Copy Discord Username
+      </a>
+    </section>
+
+    <section class="projects">
+      <div class="code-container">
+        <div class="top-bar">
+          <span class="language source-code-pro">A Few Roblox Projects: (open for hire and commissions)</span>
+          <span class="icon source-code-pro">&lt;/&gt;</span>
+        </div>
+        <div class="project source-code-pro"
+          onclick="window.open('https://www.roblox.com/games/18589551076/custom-playerlist', '_blank').focus();">
+          <h3>Custom Foreign Playerlist (Frontend and Backend)</h3>
+          <p>
+            900+ lines of code, modularised, badge equip system with a badge
+            shop, shows region, pastnames and ping - excellent use of server
+            -> client connection.
+          </p>
+        </div>
+        <div class="project source-code-pro"
+          onclick="window.open('https://www.roblox.com/games/85575565335455/gate-thingy-2', '_blank').focus();">
+          <h3>Custom Gate System (Frontend)</h3>
+          <p>
+            Utilises raycasting to detect where the floor is, option to use
+            multiple raycasts spread around the width of the gate to retrieve
+            an average floor vector to tween down to.
+          </p>
+        </div>
+        <div class="project source-code-pro">
+          <h3>(WIP) Efficient Camera Replay System for a RoFootball Game</h3>
+          <p>
+            Recording CFrames and Animations at a steady framerate while being
+            performance efficient to then replicate and play them back later
+            on the clientside.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- <footer>
+      <p>&copy; 2024 Your Name | <a href="#projects">Back to Projects</a></p>
+    </footer> -->
+
+  <script src="script.js"></script>
+</body>
+
 </html>
